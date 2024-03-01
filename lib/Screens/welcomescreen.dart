@@ -19,7 +19,7 @@ class welcomescreen extends StatelessWidget {
                   borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(180),
                       bottomRight: Radius.circular(180)),
-                  color: Color.fromARGB(255, 250, 244, 244),
+                  color: Color.fromARGB(255, 248, 245, 245),
                 )),
             Positioned(
               bottom: 50,
