@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertest/Screens/who_are_you.dart';
+import 'package:get/get.dart';
 
 class welcomescreen extends StatelessWidget {
   const welcomescreen({super.key});
@@ -58,17 +60,18 @@ class welcomescreen extends StatelessWidget {
         ),
         GestureDetector(
           onTap: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => const welcomescreen()));
+            Get.to(const WHoAreYou(),
+                transition: Transition.fadeIn,
+                duration: const Duration(milliseconds: 200));
           },
           child: Container(
-            margin: EdgeInsets.all(25),
+            margin: const EdgeInsets.all(25),
             width: double.infinity,
             height: 70,
             decoration: BoxDecoration(
               border: Border.all(
                 width: 1,
-                color: Color(0xff2c53b7),
+                color: const Color(0xff2c53b7),
               ),
               borderRadius: BorderRadius.circular(15),
             ),
