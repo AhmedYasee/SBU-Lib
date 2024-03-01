@@ -37,7 +37,7 @@ class welcomescreen extends StatelessWidget {
               child: Container(
                 alignment: Alignment.center,
                 child: const Text(
-                  'Welcome To',
+                  'Welcome Too',
                   style: TextStyle(
                       color: Colors.black,
                       fontSize: 40,
