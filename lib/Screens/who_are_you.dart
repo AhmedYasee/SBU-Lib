@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
+import 'package:fluttertest/Screens/login.dart';
 
 class WHoAreYou extends StatelessWidget {
   const WHoAreYou({super.key});
@@ -19,45 +17,68 @@ class WHoAreYou extends StatelessWidget {
                   borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(180),
                       bottomRight: Radius.circular(180)),
-                  color: Color.fromARGB(255, 248, 245, 245),
+                  color: Color.fromARGB(255, 248, 246, 246),
                 )),
             Positioned(
-              bottom: 50,
+              bottom: 90,
               right: 30,
               left: 30,
               child: Image.asset(
-                'assets/images/aaa.png',
+                'assets/images/Who.jpg',
                 width: 500.0,
                 height: 300,
                 fit: BoxFit.contain,
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(top: 50),
-              child: Container(
-                alignment: Alignment.center,
-                child: const Text(
-                  'Welcome To',
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 40,
-                      fontWeight: FontWeight.bold),
-                ),
-              ),
-            ),
           ],
+        ),
+        SizedBox(
+          height: 15,
+        ),
+        const Text(
+          'Are You ?',
+          style: TextStyle(
+              color: Color(0xff2c53b7),
+              fontSize: 26,
+              fontWeight: FontWeight.w500),
         ),
         const SizedBox(
           height: 10,
         ),
-        Image.asset(
-          'assets/images/Book.jpg',
-          fit: BoxFit.fill,
-          width: 350,
-          height: 100,
-        ),
-        const SizedBox(
-          height: 50,
+        GestureDetector(
+          onTap: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const login()));
+          },
+          child: Container(
+            margin: EdgeInsets.all(25),
+            width: double.infinity,
+            height: 70,
+            decoration: BoxDecoration(
+              border: Border.all(
+                width: 1,
+                color: Color(0xff2c53b7),
+              ),
+              borderRadius: BorderRadius.circular(15),
+            ),
+            child: const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  textAlign: TextAlign.center,
+                  'Admin',
+                  style: TextStyle(
+                      fontSize: 28,
+                      color: Color(0xff2c53b7),
+                      fontWeight: FontWeight.bold),
+                ),
+                Icon(
+                  Icons.arrow_forward_ios_outlined,
+                  color: Color(0xff2c53b7),
+                ),
+              ],
+            ),
+          ),
         ),
         GestureDetector(
           onTap: () {
@@ -80,7 +101,7 @@ class WHoAreYou extends StatelessWidget {
               children: [
                 Text(
                   textAlign: TextAlign.center,
-                  'Let\'s Go',
+                  'User',
                   style: TextStyle(
                       fontSize: 28,
                       color: Color(0xff2c53b7),
