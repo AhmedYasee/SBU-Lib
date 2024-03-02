@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fluttertest/Screens/login.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({
@@ -31,12 +30,12 @@ class CustomButton extends StatelessWidget {
             Text(
               '$text',
               textAlign: TextAlign.center,
-              style: TextStyle(
+              style: const TextStyle(
                   fontSize: 28,
                   color: Color(0xff2c53b7),
                   fontWeight: FontWeight.bold),
             ),
-            Icon(
+            const Icon(
               Icons.arrow_forward_ios_outlined,
               color: Color(0xff2c53b7),
             ),

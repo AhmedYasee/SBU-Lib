@@ -1,10 +1,29 @@
+import 'dart:typed_data';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+
 import 'package:fluttertest/component/login_button.dart';
 import 'package:fluttertest/component/my_textfield.dart';
-import 'package:image_field/image_field.dart';
+import 'package:fluttertest/component/utils.dart';
+import 'package:image_picker/image_picker.dart';
 
-class Regestration extends StatelessWidget {
+class Regestration extends StatefulWidget {
   const Regestration({super.key});
+
+  @override
+  State<Regestration> createState() => _RegestrationState();
+}
+
+class _RegestrationState extends State<Regestration> {
+  Uint8List? _image;
+
+  void selectImage() async {
+    Uint8List img = await pickImage(ImageSource.gallery);
+    setState(() {
+      _image = img;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -38,12 +57,28 @@ class Regestration extends StatelessWidget {
               fit: BoxFit.contain,
             ),
           ),
-          const MyTextField(
-            icon: Icons.upload_file,
-            obsecure: false,
-            text: 'Upload your photo',
+
+          Stack(
+            children: [
+              _image != null
+                  ? CircleAvatar(
+                      radius: 50, backgroundImage: MemoryImage(_image!))
+                  : const CircleAvatar(
+                      radius: 50,
+                      backgroundImage: NetworkImage(
+                          'https://icon-library.com/images/default-user-icon/default-user-icon-23.jpg'),
+                    ),
+              Positioned(
+                  bottom: -10,
+                  left: 65,
+                  child: IconButton(
+                      onPressed: () => selectImage(),
+                      icon: const Icon(
+                        Icons.add_a_photo,
+                        color: Color(0xff2c53b7),
+                      ))),
+            ],
           ),
-          const ImageField(),
           const MyTextField(
             icon: Icons.person,
             obsecure: false,

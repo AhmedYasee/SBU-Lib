@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fluttertest/Screens/login.dart';
 import 'package:fluttertest/Screens/regestration_one.dart';
 import 'package:fluttertest/component/custom_button.dart';
 import 'package:get/get.dart';
@@ -11,16 +10,16 @@ class WHoAreYou extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Stack(
+        const Stack(
           children: [
             CurvedContainer(),
             MyImage(),
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: 15,
         ),
-        Text(
+        const Text(
           'Are You ?',
           style: TextStyle(
               color: Color(0xff2c53b7),
@@ -33,7 +32,7 @@ class WHoAreYou extends StatelessWidget {
             Get.to(Regestration());
           },
         ),
-        CustomButton(
+        const CustomButton(
           text: 'User',
         ),
       ],
