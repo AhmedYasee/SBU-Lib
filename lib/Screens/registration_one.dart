@@ -7,14 +7,14 @@ import 'package:fluttertest/component/my_textfield.dart';
 import 'package:fluttertest/component/utils.dart';
 import 'package:image_picker/image_picker.dart';
 
-class Regestration extends StatefulWidget {
-  const Regestration({super.key});
+class Registration extends StatefulWidget {
+  const Registration({super.key});
 
   @override
-  State<Regestration> createState() => _RegestrationState();
+  State<Registration> createState() => _RegistrationState();
 }
 
-class _RegestrationState extends State<Regestration> {
+class _RegistrationState extends State<Registration> {
   Uint8List? _image;
 
   void selectImage() async {
