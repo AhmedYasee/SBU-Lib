@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fluttertest/Screens/who_are_you.dart';
 import 'package:get/get.dart';
 
+// ignore: camel_case_types
 class welcomescreen extends StatelessWidget {
   const welcomescreen({super.key});
 

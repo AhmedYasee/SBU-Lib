@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fluttertest/Screens/regestration_one.dart';
+import 'package:fluttertest/Screens/registration_one.dart';
 import 'package:fluttertest/component/custom_button.dart';
 import 'package:get/get.dart';
 
@@ -29,7 +29,7 @@ class WHoAreYou extends StatelessWidget {
         CustomButton(
           text: 'Admin',
           onTap: () {
-            Get.to(Regestration());
+            Get.to(const Registration());
           },
         ),
         const CustomButton(

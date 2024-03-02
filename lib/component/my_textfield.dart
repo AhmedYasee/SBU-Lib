@@ -22,7 +22,7 @@ class MyTextField extends StatelessWidget {
           decoration: InputDecoration(
               prefixIcon: Icon(
                 icon,
-                color: Color(0xff2c53b7),
+                color: const Color(0xff2c53b7),
               ),
               suffixIcon: Icon(
                 sufficon,
@@ -30,7 +30,7 @@ class MyTextField extends StatelessWidget {
               labelText: text,
               filled: true,
               border: OutlineInputBorder(
-                  borderSide: BorderSide(color: Color(0xff2c53b7)),
+                  borderSide: const BorderSide(color: Color(0xff2c53b7)),
                   borderRadius: BorderRadius.circular(16)),
               fillColor: Colors.white24),
         ),
