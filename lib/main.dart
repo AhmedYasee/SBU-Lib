@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fluttertest/Screens/login.dart';
 import 'package:fluttertest/Screens/regestration_one.dart';
 import 'package:fluttertest/Screens/welcomescreen.dart';
 import 'package:fluttertest/Screens/who_are_you.dart';
@@ -29,7 +28,6 @@ class MyApp extends StatelessWidget {
                   welcomescreen(),
                   WHoAreYou(),
                   Regestration(),
-                  login(),
                 ]),
                 Container(
                     alignment: const Alignment(0, .95),
