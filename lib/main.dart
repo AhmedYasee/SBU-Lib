@@ -27,13 +27,12 @@ class MyApp extends StatelessWidget {
                 PageView(controller: controller, children: const [
                   welcomescreen(),
                   WHoAreYou(),
-                  Registration(),
                 ]),
                 Container(
                     alignment: const Alignment(0, .95),
                     child: SmoothPageIndicator(
                       controller: controller,
-                      count: 3,
+                      count: 2,
                       effect: const WormEffect(
                         activeDotColor: Color(0xff2c53b7),
                       ),

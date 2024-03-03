@@ -1,4 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+import 'package:flutter/widgets.dart';
 import 'package:fluttertest/Screens/who_are_you.dart';
 import 'package:get/get.dart';
 
@@ -8,29 +11,23 @@ class welcomescreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Column(
+    return Scaffold(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Stack(
             children: [
-              Container(
-                  height: MediaQuery.of(context).size.height / 1.7,
-                  width: double.infinity,
-                  decoration: const BoxDecoration(
-                    borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(180),
-                        bottomRight: Radius.circular(180)),
-                    color: Color.fromARGB(255, 248, 245, 245),
-                  )),
+              const CurvedContainer(),
               Positioned(
-                bottom: 50,
-                right: 30,
-                left: 30,
-                child: Image.asset(
-                  'assets/images/aaa.png',
-                  width: 500.0,
+                top: 100,
+                right: .5,
+                left: 10,
+                child: Container(
+                  width: 500,
                   height: 300,
-                  fit: BoxFit.contain,
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage('assets/images/aaa.png'))),
                 ),
               ),
               Padding(
@@ -41,21 +38,22 @@ class welcomescreen extends StatelessWidget {
                     'Welcome To',
                     style: TextStyle(
                         color: Colors.black,
-                        fontSize: MediaQuery.of(context).size.width / 12,
+                        fontSize: MediaQuery.of(context).size.width / 10,
                         fontWeight: FontWeight.bold),
                   ),
                 ),
               ),
             ],
           ),
-          const SizedBox(
-            height: 10,
-          ),
-          Image.asset(
-            'assets/images/Book.jpg',
-            fit: BoxFit.fill,
-            width: 350,
+          SizedBox(
             height: 100,
+            width: 350,
+            child: Image.asset(
+              'assets/images/Book.jpg',
+              fit: BoxFit.fill,
+              width: 350,
+              height: 50,
+            ),
           ),
           const SizedBox(
             height: 50,
@@ -88,9 +86,12 @@ class welcomescreen extends StatelessWidget {
                         color: Color(0xff2c53b7),
                         fontWeight: FontWeight.bold),
                   ),
-                  Icon(
-                    Icons.arrow_forward_ios_outlined,
-                    color: Color(0xff2c53b7),
+                  Positioned(
+                    right: 5,
+                    child: Icon(
+                      Icons.arrow_forward_ios_outlined,
+                      color: Color(0xff2c53b7),
+                    ),
                   ),
                 ],
               ),

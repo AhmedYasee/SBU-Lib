@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertest/Screens/login.dart';
 import 'package:fluttertest/Screens/registration_one.dart';
 import 'package:fluttertest/component/custom_button.dart';
 import 'package:get/get.dart';
@@ -8,34 +9,41 @@ class WHoAreYou extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        const Stack(
-          children: [
-            CurvedContainer(),
-            MyImage(),
-          ],
-        ),
-        const SizedBox(
-          height: 15,
-        ),
-        const Text(
-          'Are You ?',
-          style: TextStyle(
-              color: Color(0xff2c53b7),
-              fontSize: 26,
-              fontWeight: FontWeight.w500),
-        ),
-        CustomButton(
-          text: 'Admin',
-          onTap: () {
-            Get.to(const Registration());
-          },
-        ),
-        const CustomButton(
-          text: 'User',
-        ),
-      ],
+    return Scaffold(
+      body: Column(
+        children: [
+          const Stack(
+            children: [
+              CurvedContainer(),
+              MyImage(
+                photo: 'assets/images/Who.png',
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 15,
+          ),
+          const Text(
+            'Are You ?',
+            style: TextStyle(
+                color: Color(0xff2c53b7),
+                fontSize: 26,
+                fontWeight: FontWeight.w500),
+          ),
+          CustomButton(
+            text: 'Admin',
+            onTap: () {
+              Get.to(const login());
+            },
+          ),
+          CustomButton(
+            text: 'User',
+            onTap: () {
+              Get.to(const Registration());
+            },
+          ),
+        ],
+      ),
     );
   }
 }
@@ -62,8 +70,9 @@ class CurvedContainer extends StatelessWidget {
 class MyImage extends StatelessWidget {
   const MyImage({
     super.key,
+    required this.photo,
   });
-
+  final String photo;
   @override
   Widget build(BuildContext context) {
     return Positioned(
@@ -71,7 +80,7 @@ class MyImage extends StatelessWidget {
       right: 30,
       left: 30,
       child: Image.asset(
-        'assets/images/Who.png',
+        '$photo',
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height / 2,
         fit: BoxFit.contain,
