@@ -1,7 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
 import 'package:fluttertest/Screens/who_are_you.dart';
 import 'package:get/get.dart';
 
@@ -25,7 +22,7 @@ class welcomescreen extends StatelessWidget {
                 child: Container(
                   width: 500,
                   height: 300,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       image: DecorationImage(
                           image: AssetImage('assets/images/aaa.png'))),
                 ),

@@ -1,7 +1,6 @@
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:fluttertest/component/Rigistar_Naw.dart';
 import 'package:fluttertest/component/login_button.dart';
 import 'package:fluttertest/component/my_textfield.dart';
@@ -115,7 +114,7 @@ class _RegistrationState extends State<Registration> {
               obsecure: true,
               text: 'Phone Number',
             ),
-            Rigester(),
+            const Rigester(),
             const LoginButton(),
           ],
         ),

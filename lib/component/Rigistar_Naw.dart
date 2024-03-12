@@ -20,6 +20,7 @@ class Rigester extends StatelessWidget {
         width: double.infinity,
         height: 70,
         decoration: BoxDecoration(
+          color: const Color(0xff2c53b7),
           border: Border.all(
             width: 1,
             color: const Color(0xff2c53b7),
@@ -31,15 +32,15 @@ class Rigester extends StatelessWidget {
           children: [
             Text(
               textAlign: TextAlign.center,
-              'Rigster Now',
+              'Rigster Now            ',
               style: TextStyle(
                   fontSize: 28,
                   color: Colors.white,
                   fontWeight: FontWeight.bold),
             ),
             Icon(
-              Icons.arrow_forward_ios_outlined,
-              color: Color(0xff2c53b7),
+              Icons.arrow_circle_right_sharp,
+              color: Colors.white,
             ),
           ],
         ),

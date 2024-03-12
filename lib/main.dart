@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fluttertest/Screens/registration_one.dart';
 import 'package:fluttertest/Screens/welcomescreen.dart';
 import 'package:fluttertest/Screens/who_are_you.dart';
 import 'package:get/get.dart';
