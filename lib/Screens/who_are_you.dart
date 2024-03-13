@@ -50,13 +50,13 @@ class WHoAreYou extends StatelessWidget {
                 fontWeight: FontWeight.w500),
           ),
           CustomButton(
-            text: 'Admin',
+            text: 'Admin         ',
             onTap: () {
               Get.to(const Registration());
             },
           ),
           CustomButton(
-            text: 'User',
+            text: 'User            ',
             onTap: () {
               Get.to(const Registration());
             },

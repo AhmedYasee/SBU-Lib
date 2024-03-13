@@ -109,7 +109,7 @@ class _RegistrationState extends State<Registration> {
             const SizedBox(height: 20),
             const MyTextField(
               icon: Icons.phone,
-              obscure: true,
+              obscure: false,
               text: 'Phone Number',
             ),
             const SizedBox(height: 20),

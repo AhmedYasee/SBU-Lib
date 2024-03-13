@@ -55,7 +55,7 @@ class welcomescreen extends StatelessWidget {
                 children: [
                   Text(
                     textAlign: TextAlign.center,
-                    'Let\'s Go',
+                    'Let\'s Go         ',
                     style: TextStyle(
                         fontSize: 28,
                         color: Color(0xff2c53b7),
