@@ -12,33 +12,11 @@ class welcomescreen extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          Stack(
+          const Stack(
             children: [
-              const CurvedContainer(),
-              Positioned(
-                top: 100,
-                right: .5,
-                left: 10,
-                child: Container(
-                  width: 500,
-                  height: 300,
-                  decoration: const BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage('assets/images/aaa.png'))),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 50),
-                child: Container(
-                  alignment: Alignment.center,
-                  child: Text(
-                    'Welcome To',
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontSize: MediaQuery.of(context).size.width / 10,
-                        fontWeight: FontWeight.bold),
-                  ),
-                ),
+              CurvedContainer(),
+              MyImage(
+                photo: 'assets/images/Animation - AnimationBooks.json',
               ),
             ],
           ),

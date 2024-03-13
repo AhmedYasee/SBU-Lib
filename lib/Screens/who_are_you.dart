@@ -95,7 +95,7 @@ class MyImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-      bottom: 30,
+      bottom: 20,
       right: 30,
       left: 30,
       child: Lottie.asset(
