@@ -24,6 +24,15 @@ class _MyDropdownListState extends State<MyDropdownList> {
     'Faculty of Agriculture': Icons.agriculture,
     'Faculty of Education': Icons.school,
     'Faculty of Arts': Icons.palette,
+    'Faculty of Engineering at Shoubra': Icons.engineering,
+    'Faculty of Computers and Information': Icons.computer,
+    'Faculty of Science': Icons.science,
+    'Faculty of Applied Arts': Icons.color_lens,
+    'Faculty of Special Education': Icons.school,
+    'Faculty of Physical Education': Icons.directions_run,
+    'Faculty of Veterinary Medicine': Icons.pets,
+    'Faculty of Nursing': Icons.local_hospital,
+    'Faculty of Physiotherapy': Icons.accessibility,
     // Add more colleges as needed
   };
 
