@@ -49,7 +49,7 @@ class _RegistrationState extends State<Registration> {
                   fontWeight: FontWeight.bold),
             ),
             Lottie.asset(
-              'assets/images/Animation - Registration.json',
+              'assets/images/Animation - 1710302184526 (1).json',
             ),
 
             Stack(

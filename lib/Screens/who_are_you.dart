@@ -35,7 +35,7 @@ class WHoAreYou extends StatelessWidget {
             children: [
               CurvedContainer(),
               MyImage(
-                photo: 'assets/images/Animation - AnimationBooks.json',
+                photo: 'assets/images/Animation - Registration.json',
               ),
             ],
           ),
