@@ -81,7 +81,9 @@ class _MyDropdownListState extends State<MyDropdownList> {
               const SizedBox(width: 5), // Spacer
               Expanded(
                 child: Text(
-                  _selectedItem ?? 'Select College',
+                  style: const TextStyle(
+                      fontSize: 17, color: Color.fromARGB(255, 67, 67, 67)),
+                  _selectedItem ?? ' Select College',
                   overflow: TextOverflow.ellipsis,
                 ),
               ),
