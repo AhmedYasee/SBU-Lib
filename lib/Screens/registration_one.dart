@@ -1,5 +1,6 @@
 import 'dart:typed_data';
 import 'package:flutter/material.dart';
+import 'package:fluttertest/component/MyDropdownList.dart';
 import 'package:fluttertest/component/Rigistar_Naw.dart';
 import 'package:fluttertest/component/login_button.dart';
 import 'package:fluttertest/component/my_textfield.dart';
@@ -76,41 +77,48 @@ class _RegistrationState extends State<Registration> {
             const SizedBox(height: 7),
             const MyTextField(
               icon: Icons.person,
-              obsecure: false,
+              obscure: false,
               text: 'First Name',
             ),
             const SizedBox(height: 20),
             const MyTextField(
               icon: Icons.person,
-              obsecure: false,
+              obscure: false,
               text: 'Last Name',
             ),
             const SizedBox(height: 20),
             const MyTextField(
               icon: Icons.email,
-              obsecure: false,
+              obscure: false,
               text: 'Email',
             ),
             const SizedBox(height: 20),
             const MyTextField(
               icon: Icons.lock,
-              obsecure: true,
+              obscure: true,
               text: 'password',
-              sufficon: Icons.remove_red_eye_rounded,
+              suffixIcon: Icons.remove_red_eye_rounded,
             ),
             const SizedBox(height: 20),
             const MyTextField(
-              sufficon: Icons.remove_red_eye_rounded,
+              suffixIcon: Icons.remove_red_eye_rounded,
               icon: Icons.lock,
-              obsecure: true,
+              obscure: true,
               text: 'Confirm password',
             ),
             const SizedBox(height: 20),
             const MyTextField(
               icon: Icons.phone,
-              obsecure: true,
+              obscure: true,
               text: 'Phone Number',
             ),
+            const SizedBox(height: 20),
+            MyDropdownList(
+              onChanged: (String? newValue) {
+                print('Selected item: $newValue');
+              },
+            ),
+
             const Rigester(),
             const LoginButton(),
           ],
