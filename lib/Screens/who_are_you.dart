@@ -8,7 +8,6 @@ import 'package:flutter/material.dart'
         Column,
         Container,
         FontWeight,
-        Image,
         MediaQuery,
         Positioned,
         Radius,
@@ -22,6 +21,7 @@ import 'package:flutter/material.dart'
 import 'package:fluttertest/Screens/registration_one.dart';
 import 'package:fluttertest/component/custom_button.dart';
 import 'package:get/get.dart';
+import 'package:lottie/lottie.dart';
 
 class WHoAreYou extends StatelessWidget {
   const WHoAreYou({super.key});
@@ -35,7 +35,7 @@ class WHoAreYou extends StatelessWidget {
             children: [
               CurvedContainer(),
               MyImage(
-                photo: 'assets/images/Who.png',
+                photo: 'assets/images/Animation - AnimationBooks.json',
               ),
             ],
           ),
@@ -95,10 +95,10 @@ class MyImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-      bottom: 90,
+      bottom: 30,
       right: 30,
       left: 30,
-      child: Image.asset(
+      child: Lottie.asset(
         '$photo',
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height / 2,

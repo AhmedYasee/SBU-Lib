@@ -1,11 +1,11 @@
 import 'dart:typed_data';
-
 import 'package:flutter/material.dart';
 import 'package:fluttertest/component/Rigistar_Naw.dart';
 import 'package:fluttertest/component/login_button.dart';
 import 'package:fluttertest/component/my_textfield.dart';
 import 'package:fluttertest/component/utils.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:lottie/lottie.dart';
 
 class Registration extends StatefulWidget {
   const Registration({super.key});
@@ -48,11 +48,8 @@ class _RegistrationState extends State<Registration> {
                   fontSize: 30,
                   fontWeight: FontWeight.bold),
             ),
-            Image.asset(
-              'assets/images/Lib.jpg',
-              width: 500.0,
-              height: 300,
-              fit: BoxFit.contain,
+            Lottie.asset(
+              'assets/images/Animation - Registration.json',
             ),
 
             Stack(
