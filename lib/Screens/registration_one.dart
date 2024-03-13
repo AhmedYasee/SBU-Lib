@@ -60,8 +60,8 @@ class _RegistrationState extends State<Registration> {
                         radius: 50, backgroundImage: MemoryImage(_image!))
                     : const CircleAvatar(
                         radius: 50,
-                        backgroundImage: NetworkImage(
-                            'https://icon-library.com/images/default-user-icon/default-user-icon-23.jpg'),
+                        backgroundImage: AssetImage(
+                            'assets/images/default-user-icon-23.jpg'),
                       ),
                 Positioned(
                     bottom: -10,
