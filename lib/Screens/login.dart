@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertest/Screens/who_are_you.dart';
+import 'package:fluttertest/component/login_button.dart';
+import 'package:fluttertest/component/my_textfield.dart';
 
 // ignore: camel_case_types
 class login extends StatelessWidget {
@@ -6,9 +9,42 @@ class login extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        color: Colors.white,
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const Stack(
+              children: [
+                CurvedContainer(),
+                MyImage(
+                  photo: 'assets/images/Animation - LoginGirl.json',
+                ),
+              ],
+            ),
+            const SizedBox(height: 20),
+            const MyTextField(
+              icon: Icons.email,
+              obscure: false,
+              text: 'Email',
+            ),
+            const SizedBox(height: 20),
+            const MyTextField(
+              icon: Icons.lock,
+              obscure: true,
+              text: 'password',
+              suffixIcon: Icons.remove_red_eye_rounded,
+            ),
+            const SizedBox(height: 20),
+            const LoginButton(),
+            TextButton(
+              onPressed: () {},
+              child: const Text(
+                "Forget Password?",
+                style: TextStyle(fontSize: 20, color: Color(0xff2c53b7)),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
