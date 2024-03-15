@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertest/Screens/who_are_you.dart';
-import 'package:fluttertest/component/login_button.dart';
+import 'package:fluttertest/component/loginNow_button.dart';
 import 'package:fluttertest/component/my_textfield.dart';
 
 // ignore: camel_case_types
@@ -35,7 +35,7 @@ class login extends StatelessWidget {
               suffixIcon: Icons.remove_red_eye_rounded,
             ),
             const SizedBox(height: 20),
-            const LoginButton(),
+            const LoginNowButton(),
             TextButton(
               onPressed: () {},
               child: const Text(
