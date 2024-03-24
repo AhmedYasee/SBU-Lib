@@ -18,6 +18,7 @@ import 'package:flutter/material.dart'
         Text,
         TextStyle,
         Widget;
+import 'package:fluttertest/Screens/login.dart';
 import 'package:fluttertest/Screens/registration_one.dart';
 import 'package:fluttertest/component/custom_button.dart';
 import 'package:get/get.dart';
@@ -52,7 +53,7 @@ class WHoAreYou extends StatelessWidget {
           CustomButton(
             text: 'Admin         ',
             onTap: () {
-              Get.to(const Registration());
+              Get.to(const login());
             },
           ),
           CustomButton(

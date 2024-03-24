@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class Colleges_Button extends StatelessWidget {
   const Colleges_Button({
     super.key,
