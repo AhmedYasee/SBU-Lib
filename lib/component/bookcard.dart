@@ -71,7 +71,7 @@ class BookCard extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => BooksDetails()));
+                                  builder: (context) => const BooksDetails()));
                         },
                         style: ButtonStyle(
                             backgroundColor: MaterialStateProperty.all(

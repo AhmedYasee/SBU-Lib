@@ -115,6 +115,7 @@ class _RegistrationState extends State<Registration> {
             const SizedBox(height: 20),
             MyDropdownList(
               onChanged: (String? newValue) {
+                // ignore: avoid_print
                 print('Selected item: $newValue');
               },
             ),

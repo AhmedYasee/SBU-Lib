@@ -100,7 +100,7 @@ class MyImage extends StatelessWidget {
       right: 30,
       left: 30,
       child: Lottie.asset(
-        '$photo',
+        photo,
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height / 2,
         fit: BoxFit.contain,

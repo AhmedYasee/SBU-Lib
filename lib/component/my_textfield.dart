@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 class MyTextField extends StatelessWidget {
   const MyTextField({
-    Key? key,
+    super.key,
     required this.obscure,
     required this.text,
     this.icon,
     this.suffixIcon,
-  }) : super(key: key);
+  });
 
   final bool obscure;
   final String text;
@@ -28,7 +28,7 @@ class MyTextField extends StatelessWidget {
                   color: Colors.grey.withOpacity(0.5),
                   spreadRadius: 2,
                   blurRadius: 7,
-                  offset: Offset(0, 3),
+                  offset: const Offset(0, 3),
                 ),
               ],
             ),
